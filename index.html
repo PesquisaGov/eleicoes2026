@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#071326">
   <meta name="description" content="Participe de pesquisas de opinião sobre política e eleições pelo aplicativo Eleições 2026 e receba via Pix até R$45 por dia, dependendo da participação.">
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./PesquisaGov-logo.png" type="image/png">
   <title>Pesquisa de opinião | Eleições 2026</title>
   <style>
     :root {
@@ -83,14 +83,15 @@
       place-items: center;
       width: 46px;
       height: 46px;
-      border: 2px solid var(--gold);
-      border-radius: 15px;
-      background: var(--gold);
+      overflow: hidden;
+      border: 1px solid rgba(184, 215, 250, .28);
+      border-radius: 50%;
+      background: var(--night-850);
       color: var(--night-950);
-      box-shadow: 0 11px 28px rgba(255, 212, 71, .18);
+      box-shadow: 0 11px 28px rgba(0, 0, 0, .28), 0 0 0 3px rgba(255, 212, 71, .08);
     }
 
-    .brand-icon { display: block; width: 31px; height: 31px; }
+    .brand-icon { display: block; width: 100%; height: 100%; object-fit: cover; }
     .toplink { color: var(--sky); font-size: .95rem; font-weight: 700; text-decoration: none; }
     .toplink:hover, .toplink:focus-visible { color: var(--gold); }
 
@@ -301,8 +302,8 @@
       body.has-floating-download { padding-bottom: calc(89px + env(safe-area-inset-bottom)); }
       .topbar { padding: 17px 0; }
       .brand { gap: 9px; font-size: .97rem; }
-      .mark { flex-basis: 42px; width: 42px; height: 42px; border-radius: 13px; }
-      .brand-icon { width: 28px; height: 28px; }
+      .mark { flex-basis: 42px; width: 42px; height: 42px; border-radius: 50%; }
+      .brand-icon { width: 100%; height: 100%; }
       .toplink { font-size: .82rem; }
       .hero { gap: 35px; padding: 50px 0 64px; }
       h1 { margin: 16px 0 20px; font-size: clamp(2.75rem, 14vw, 4.4rem); }
@@ -344,13 +345,7 @@
   <header class="shell topbar">
     <a class="brand" href="./" aria-label="Eleições 2026, início">
       <span class="mark" aria-hidden="true">
-        <svg class="brand-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
-          <path d="M8 21h32v21H8V21Z" fill="#071326"/>
-          <path d="M11 25h26v13H11V25Z" fill="#123765"/>
-          <path d="M6 19h36v6H6v-6Z" fill="#071326"/>
-          <path d="m15.1 8.8 18-2.5 1.7 12.2-18 2.5-1.7-12.2Z" fill="#FFF9EB"/>
-          <path d="m21 14.7 2.6 2.4 5.4-6" stroke="#D09A16" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <img class="brand-icon" src="./PesquisaGov-logo.png" alt="">
       </span>
       <span>Eleições 2026</span>
     </a>
